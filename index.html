@@ -1,0 +1,71 @@
+<!-- I avoided minifying of the entire project for readability of the code -->
+<!-- DOCTYPE html removed on purpose because it breaks vis JS auto height (known bug on their part) - remove and see for yourself  -->
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+
+  <link rel="icon" href="icon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/vis-network.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Package Dependencies</title>
+
+</head>
+
+<body>
+
+  <!-- SIDE NAV -->
+  <ul id="slide-out" class="side-nav fixed">
+    <li class="logo"><img id="logo-container" src="logo.png"></li>
+    <li><a class="center subheader">NPM Package Dependencies</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <!-- SEARCH -->
+          <div class="input-field col s12">
+            <input pattern="[A-Za-z]" type="text" placeholder="Package name..." class="PackageName">
+          </div>
+          <div class="col s12 m12">
+            <div class="card-panel">
+              <span class="description">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </ul>
+
+    <!-- canvas of vis js -->
+    <main>
+      <div id="mynetwork"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer deep-purple darken-1">
+
+      <div class="footer-copyright">
+        <div class="container">
+          Made for Snyk by Gilad Feder
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vis.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+
+
+</body>
+
+</html>
