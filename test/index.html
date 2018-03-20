@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <script type="application/javascript" charset="utf-8" src="../js/vis.js"></script>
+  <script type="application/javascript" charset="utf-8" src="../js/jquery-3.3.1.min.js"></script>
+  <script type="application/javascript" charset="utf-8" src="../js/materialize.min.js"></script>
+  <script type="application/javascript" charset="utf-8" src="../js/main.js"></script>
+  <script type="application/javascript" charset="utf-8" src="chai.js"></script>
+  <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="MainTest.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>
