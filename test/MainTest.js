@@ -17,19 +17,19 @@ var reactJSON = {
   }};
 var assert = chai.assert;
 describe("main.js" , function(){
-    describe("GetDependencies() " , function(){
+    describe("GetDependencies() with A Package " , function(){
         it("should find 56 dependencies for the a package;" , function(){
             GetDependencies(aJSON);
                   setTimeout(function() {
-                    assert.equal(Nodes.length, 7);
+                    assert.equal(Nodes.length, 56);
                   }, 10000)
         });
     });
-    describe("GetDependencies() " , function(){
-        it("should find 56 dependencies for the a package;" , function(){
+    describe("GetDependencies() with React Package " , function(){
+        it("should find 16 dependencies for the a package;" , function(){
             GetDependencies(reactJSON);
                   setTimeout(function() {
-                    assert.equal(Nodes.length, 7);
+                    assert.equal(Nodes.length, 16);
                   }, 10000)
         });
     });
