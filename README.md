@@ -18,3 +18,12 @@ option #2
 
     1. cd into folder
     2. python http.server -m 8000
+
+
+---------------
+
+tests:
+
+1. cd into the library in console
+2. run "mocha". (make sure npm is installed).
+3. enjoy.
