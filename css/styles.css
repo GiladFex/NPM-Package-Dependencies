@@ -28,6 +28,13 @@
   }
 }
 
+
+main {
+  padding-left: 300px;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
 footer {
   bottom: 0px;
   left: 300px;
@@ -40,12 +47,6 @@ footer {
 .logo {
   text-align: center;
   padding-top: 20px;
-}
-
-main {
-  padding-left: 300px;
-  width: 100%;
-  height: calc(100% - 80px);
 }
 
 .dropdown-button {
