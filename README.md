@@ -1,11 +1,11 @@
 # NPM-Package-Dependencies
 Shows dependencies between packages
 
-##How to run?
+## How to run?
 
 Run at a local server to avoid CORS.
 
-  ###python 3.2:
+### python 3.2:
 
     1. cd into folder
     2. python http.server -m 8000
